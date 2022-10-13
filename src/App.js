@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className = "container">
+          <h1>Search&Find📖</h1>
+          <div className = "searchingForm">
+          <form class = "d-flex" 
+        role = "search" >
+        <input class = "form-control me-2"
+        type="search" 
+        placeholder="What are you looking for... " 
+        />
+        <button class = "btn btn-outline-success" type="submit" id="searching">
+          Search
+          </button>
+      </form>
+      </div>
+
+
+        </div>
+
       </header>
     </div>
   );
 }
 
-export default App;
+
