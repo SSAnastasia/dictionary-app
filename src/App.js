@@ -1,11 +1,15 @@
 import React, {useState} from "react";
 import './App.css';
+import Result from "./Result";
 import axios from "axios";
 
 export default function App() {
   let [keyword, setKeyword] = useState("");
+  let [result, setResult] = useState({});
+  
   function handleResponse(response){
     console.log(response.data[0]);
+    setResult(response.data[0]);
   }
 
   function search(event){
@@ -24,18 +28,20 @@ export default function App() {
         <div className = "container">
           <h1>Search&Find📖</h1>
           <div className = "searchingForm">
-          <form class = "d-flex" 
-        role = "search" >
-        <input class = "form-control me-2"
+          <form className = "d-flex" 
+        role = "search"
+         >
+        <input className = "form-control me-2"
         type="search" 
         placeholder="What are you looking for... " 
         onChange={handleKeywordChange}/>
-        <button class = "btn btn-outline-success" type="submit" id="searching">
+        <button className = "btn btn-outline-success" type="submit" id="searching"
+        onSubmit = {search}>
           Search
           </button>
       </form>
+      <Result results={result} />
       </div>
-
 
         </div>
 
