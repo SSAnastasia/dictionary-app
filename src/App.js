@@ -29,7 +29,7 @@ export default function App() {
         <input class = "form-control me-2"
         type="search" 
         placeholder="What are you looking for... " 
-        />
+        onChange={handleKeywordChange}/>
         <button class = "btn btn-outline-success" type="submit" id="searching">
           Search
           </button>
