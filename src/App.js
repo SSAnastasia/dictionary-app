@@ -47,13 +47,13 @@ export default function App(props) {
         type="search" 
         placeholder="What are you looking for... " 
         onChange={handleKeywordChange}/>
-        <button className = "btn btn-outline-success" type="submit" id="searching"
+        <button className = "btn btn-outline-dark" type="submit" id="searching"
         onSubmit = {search}>
           Search
           </button>
       </form>
       <div className="hint">
-        suggest words: 
+        (sun, sea, wine...)
       </div>
       <Results results={results} />
       </div>

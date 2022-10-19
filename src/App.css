@@ -1,7 +1,40 @@
 .App {
-  text-align: center;
+  color:black;
+  background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+  width:100%;
 }
 
 ul{
   text-align: left;
+}
+.searchingForm{
+ border-radius: 10px;
+ padding:20px;
+}
+.searching{
+  background-color: black;
+}
+.hint{
+  color:gray;
+  text-align: left;
+}
+h2{
+  text-decoration: underline;
+  text-align: center;
+}
+h1,.phonetic{
+  text-align: center;
+}
+.definition{
+  background-color:#ffd6a4; 
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+}
+.example{
+  color:rgb(124, 96, 96);
+}
+form{
+  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
 }
