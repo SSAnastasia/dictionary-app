@@ -3,6 +3,7 @@ import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 import "./App.css";
 
+
 export default function Results(props) {
    if (props.results) {
    return(
@@ -21,6 +22,7 @@ export default function Results(props) {
           return (
           <div key={index}> 
             <Meaning meaning={meaning} />
+            
             </div>
           );
         
