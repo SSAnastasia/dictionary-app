@@ -47,7 +47,7 @@ export default function App(props) {
     <div className="App">
       
         <div className = "container">
-              <h1>Search&Find📖</h1>
+              <img id="logo" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/924/original/logo.png?1668508992" alt="logo"/>
               <div className = "searchingForm">
               <form className = "d-flex" 
               id = "form"

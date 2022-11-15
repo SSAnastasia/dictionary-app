@@ -2,6 +2,8 @@
   color:black;
   background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
   width:100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 ul{
@@ -22,7 +24,7 @@ h2{
   text-decoration: underline;
   text-align: center;
 }
-h1,.phonetic{
+.phonetic{
   text-align: center;
 }
 .definition{
@@ -45,4 +47,9 @@ form{
 .footer{
   text-align: center;
   font-size: larger;
+}
+#logo{
+  display: block;
+  margin: 0 auto;
+  position:relative;
 }
